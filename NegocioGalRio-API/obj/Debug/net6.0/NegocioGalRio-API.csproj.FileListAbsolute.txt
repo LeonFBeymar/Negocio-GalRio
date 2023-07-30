@@ -124,3 +124,4 @@ C:\Users\Novit\Documents\GitHub\NegocioGalRio-API\NegocioGalRio-API\obj\Debug\ne
 C:\Users\Novit\Documents\GitHub\NegocioGalRio-API\NegocioGalRio-API\obj\Debug\net6.0\NegocioGalRio-API.pdb
 C:\Users\Novit\Documents\GitHub\NegocioGalRio-API\NegocioGalRio-API\obj\Debug\net6.0\NegocioGalRio-API.genruntimeconfig.cache
 C:\Users\Novit\Documents\GitHub\NegocioGalRio-API\NegocioGalRio-API\obj\Debug\net6.0\ref\NegocioGalRio-API.dll
+C:\Users\Novit\Documents\GitHub\NegocioGalRio-API\NegocioGalRio-API\bin\Debug\net6.0\AutoMapper.dll

@@ -15,7 +15,7 @@ namespace NegocioGalRio_API.Contexts
         public virtual DbSet<Stock> Stock { get; set; }
         public virtual DbSet<Rol> Rol { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
-
+        
         //Esto es por si se ocurre modificar la configuracion para conectarse con la db
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -24,7 +24,7 @@ namespace NegocioGalRio_API.Contexts
             }
         }
 
-        #region configuracio Models
+        #region configuracion Models
         //Esto es para configurar los Models, ejemplo haciendo que la PK sea lo señalado
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -51,7 +51,8 @@ namespace NegocioGalRio_API.Contexts
 
                 entity.Property(e => e.Precio)
                     .HasMaxLength(50)
-                    .IsRequired();
+                    .IsRequired()
+                    .IsUnicode(false);
 
             });
             modelBuilder.Entity<Categoria>(entity =>

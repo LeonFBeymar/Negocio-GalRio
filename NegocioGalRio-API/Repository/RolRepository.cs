@@ -1,5 +1,6 @@
 ﻿using NegocioGalRio_API.Contexts;
 using NegocioGalRio_API.Models;
+using NegocioGalRio_API.ViewModel;
 
 namespace NegocioGalRio_API.Repository
 {
@@ -10,10 +11,14 @@ namespace NegocioGalRio_API.Repository
         {
             this.context = context;
         }
-        
-        public IEnumerable<Rol> Get()
+        public IEnumerable<Rol> GetRol()
         {
             return context.Rol.ToArray();
+        }
+
+        public void SetRol(Rol rol) {
+            context.Add(rol);
+            context.SaveChanges();
         }
     }
 }
